@@ -101,9 +101,6 @@ public class ExpenseItemInfoActivity extends AppCompatActivity {
         expenseItemTitle = getIntent().getStringExtra("expenseItemTitle");
         expenseStatus = getIntent().getStringExtra("expenseStatus");
 
-        Log.d(TAG, "UserType1: " + userType1);
-        Log.d(TAG, "ExpenseStatus: " + expenseStatus);
-
         if(employeeID == null) {
             mDatabase = FirebaseDatabase.getInstance().getReference(expenseStatus).child(userID).child(expenseTitle).child(expenseItemTitle);
         }
@@ -160,7 +157,6 @@ public class ExpenseItemInfoActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Log.e(TAG, "Failed to read data", error.toException());
             }
         });
 
@@ -190,7 +186,6 @@ public class ExpenseItemInfoActivity extends AppCompatActivity {
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception exception) {
-                        Log.e(TAG, "Failed to delete image", exception);
                     }
                 });
             }
