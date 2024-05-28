@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersExpensesActivity">
+
+    <TextView
+        android:id="@+id/employeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/lexend_regular"
+        android:textColor="@color/blue"
+        android:gravity="center_horizontal|bottom"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/acceptedExpenses"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employeeName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:text="Accepted Expenses"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employeeName" />
+
+    <Button
+        android:id="@+id/openExpenses"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acceptedExpenses"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:text="Requested Expenses"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceptedExpenses" />
+
+    <Button
+        android:id="@+id/inProgressExpenses"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openExpenses"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:text="Expenses in progress"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openExpenses" />
+
+    <Button
+        android:id="@+id/employeeStatistics"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inProgressExpenses"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:text="Employee Statistics"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inProgressExpenses" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

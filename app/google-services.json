@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1030553601655",
+    "firebase_url": "https://fintrack-b36fa-default-rtdb.firebaseio.com",
+    "project_id": "fintrack-b36fa",
+    "storage_bucket": "fintrack-b36fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030553601655:android:5ad821fa2aab2c6a37a872",
+        "android_client_info": {
+          "package_name": "com.example.fintrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCoCySiUjrehddYOiRFO9vJSReRZic_bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/expense_item_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:fontFamily="@font/lexend_regular" />
+
+    <TextView
+        android:id="@+id/expense_item_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/expense_item_title1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:fontFamily="@font/lexend_regular" />
+
+    <TextView
+        android:id="@+id/expense_item_price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/expense_item_date1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:fontFamily="@font/lexend_regular" />
+
+    <ImageView
+        android:id="@+id/new_expense_item_image2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/expense_item_price1"
+        android:contentDescription="Expense Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/new_expense_delete"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Expense Item"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/new_expense_item_image2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/download_image"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Download Image"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/new_expense_item_image2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

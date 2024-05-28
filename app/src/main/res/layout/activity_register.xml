@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:textColor="@color/blue"
+        android:textSize="50dp"
+        android:fontFamily="@font/lexend_regular" />
+
+    <EditText
+        android:id="@+id/registerUsername"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:hint="Username"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:inputType="text"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/registerFirstName"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:hint="First Name"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:inputType="text"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/registerUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/registerLastName"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:hint="Last Name"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:inputType="text"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/registerFirstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:hint="Email"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/registerLastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:hint="Password"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/registerEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/registerConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:hint="Confirm Password"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/registerPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerConfirmPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="Already have an account? Sign In"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:fontFamily="@font/lexend_bold" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/textViewLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

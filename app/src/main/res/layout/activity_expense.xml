@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView_new_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lexend_bold"
+        android:textColor="@color/blue"
+        android:text="New Expenses"/>
+
+    <!--EditText
+        android:id="@+id/new_expense_title"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:hint="Expense Title"
+        android:drawablePadding="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_rounded_background"
+        android:layout_below="@id/textView_new_expense"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" /-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_expense_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="140dp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/textView_new_expense" />
+
+    <TextView
+        android:id="@+id/textView_price_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:background="@drawable/edittext_rounded_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lexend_bold"
+        android:textColor="@color/blue"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/add_new_expense_item"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:gravity="center"
+        android:text="Add new expense item"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:elevation="0dp" />
+
+    <Button
+        android:id="@+id/request_expense"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:gravity="center"
+        android:text="Request Expense"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:elevation="0dp" />
+
+    <Button
+        android:id="@+id/acceptRequestedItem"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:gravity="center"
+        android:text="Accept Requested Expense"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:elevation="0dp" />
+
+    <Button
+        android:id="@+id/declineRequestedItem"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:gravity="center"
+        android:text="Decline Requested Expense"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:elevation="0dp" />
+
+</RelativeLayout>
